@@ -18,15 +18,37 @@
         h3 {
             margin-left: 10px; /* Adjust the margin as needed */
         }
-    </style>
+     </style>
+   <style>
+    a {
+      color: black; /* Change the color to your preference */
+      text-decoration: none; /* Remove underline */
+    }
+  </style>
 </head>
 <body>
     <div class="image-text-container">
-        <img src="https://media.discordapp.net/attachments/972716837236277268/1196455089116823612/Untitled16.png?ex=65b7b0a2&is=65a53ba2&hm=1a4aabdedfb943419a3747421d081bfdd4d8da9ce9b453f3206403975ce90a77&" alt="Your Image">
+        <img src="https://media.discordapp.net/attachments/972716837236277268/1196455089116823612/Untitled16.png?ex=65b7b0a2&is=65a53ba2&hm=1a4aabdedfb943419a3747421d081bfdd4d8da9ce9b453f3206403975ce90a77&" alt="Clydiz Gamer logo">
         <a href="https://mroraange.github.io"><h2>ㅤMrOrange.github.io</h2></a>
     </div>
 </body>
 <pre>
   Hello this is my first website.
-</pre>
+  
+  Here I will be using different
+  HTML functions that I just learned.</pre>
+  <h4>1. Connecting links to the text and using button for just nice visuals</h4>
+<p>You can click on these buttons to know about my online connections:</p>
+<button><a href="https://youtube.com/clydizgamer">My YouTube channel</a></button><br><br>
+<button><a href="https://discord.com/invite/QPkEPQEkWE">My discord server</a></button>
+<p id="clickText" onclick="fadeInOut()"><button>My secret yt channel</button></p>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    function fadeInOut() {
+        $("#displayText").html('<span style="background-color: #ddd;">Why will I tell you if it is secret?</span>').fadeIn().delay(2000).fadeOut();
+    }
+</script>
+
+<p id="displayText"></p>
 </html>
