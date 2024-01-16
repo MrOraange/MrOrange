@@ -1,3 +1,57 @@
 body {
-    font-size: 15pt;
+  color: white;
+  background: linear-gradient(to right, #001f3f, #003366);
+}
+
+h2 {
+  color: white;
+  text-shadow: 2px 2px 15px rgba(0, 200, 260, 55); /* Adjust values as needed */
+}
+
+pre {
+  font-size: 13px;
+}
+
+.image-text-container {
+  background-color: rgba(24, 140, 210, 0.25);
+  display: inline-block;
+  text-align: centre;
+}
+.image-text-container {
+  display: flex;
+  align-items: center;
+}
+
+.image-text-container img {
+  width: 100px; /* Adjust the width as needed */
+  height: auto;
+}
+
+.image-text-container h3 {
+  margin-left: 10px; /* Adjust the margin as needed */
+}
+
+a {
+  text-decoration: none
+}
+
+/* Style for the button */
+Button {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+background: linear-gradient(45deg, #ecf4f9, #3498db);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect */
+.myButton:hover {
+  background-color: #2980b9;
 }
