@@ -5,7 +5,7 @@ body {
 
 h2 {
   color: white;
-  text-shadow: 2px 2px 15px rgba(0, 200, 260, 55); /* Adjust values as needed */
+  text-shadow: 2px 2px 15px rgba(0, 200, 260, 0.55); /* Adjust values as needed */
 }
 
 pre {
@@ -14,12 +14,10 @@ pre {
 
 .image-text-container {
   background-color: rgba(24, 140, 210, 0.25);
-  display: inline-block;
-  text-align: centre;
-}
-.image-text-container {
   display: flex;
   align-items: center;
+  justify-content: center; /* Center the content horizontally */
+  text-align: center; /* Center the text within the container */
 }
 
 .image-text-container img {
@@ -32,11 +30,11 @@ pre {
 }
 
 a {
-  text-decoration: none
+  text-decoration: none;
 }
 
 /* Style for the button */
-Button {
+button {
   display: inline-block;
   padding: 10px 15px;
   font-size: 16px;
@@ -45,13 +43,13 @@ Button {
   cursor: pointer;
   outline: none;
   color: #fff;
-background: linear-gradient(45deg, #ecf4f9, #3498db);
+  background: linear-gradient(45deg, #ecf4f9, #3498db);
   border: none;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Hover effect */
-.myButton:hover {
+button:hover {
   background-color: #2980b9;
 }
