@@ -45,11 +45,34 @@ button {
   color: #fff;
   background: linear-gradient(45deg, #ecf4f9, #3498db);
   border: none;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Hover effect */
 button:hover {
   background-color: #2980b9;
+}
+
+/* Style for the table with modified text color and rounded corners */
+.myTable {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 270px;
+}
+
+.myTable th, .myTable td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+  border-radius: 0px; /* Slightly increased rounded corners */
+}
+
+.myTable th {
+  background-color: #3498db;
+  color: #fff; /* Header text color */
+}
+
+.myTable a {
+  color: #fff; /* Anchor link text color */
 }
