@@ -1,11 +1,12 @@
 body {
   color: white;
-  background: linear-gradient(to right, #001f3f, #003366);
+  background: linear-gradient(to right, #001C38 , #003366);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h2 {
   color: white;
-  text-shadow: 2px 2px 15px rgba(0, 200, 260, 0.55); /* Adjust values as needed */
+  text-shadow: 2px 2px 15px rgba(0, 200, 260, 0.55);
 }
 
 pre {
@@ -16,24 +17,23 @@ pre {
   background-color: rgba(24, 140, 210, 0.25);
   display: flex;
   align-items: center;
-  justify-content: center; /* Center the content horizontally */
-  text-align: center; /* Center the text within the container */
+  justify-content: center;
+  text-align: center;
 }
 
 .image-text-container img {
-  width: 100px; /* Adjust the width as needed */
+  width: 100px;
   height: auto;
 }
 
 .image-text-container h3 {
-  margin-left: 10px; /* Adjust the margin as needed */
+  margin-left: 10px;
 }
 
 a {
   text-decoration: none;
 }
 
-/* Style for the button */
 button {
   display: inline-block;
   padding: 10px 15px;
@@ -45,16 +45,10 @@ button {
   color: #fff;
   background: linear-gradient(45deg, #ecf4f9, #3498db);
   border: none;
-  border-radius: 20px;
+  border-radius: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Hover effect */
-button:hover {
-  background-color: #2980b9;
-}
-
-/* Style for the table with modified text color and rounded corners */
 .myTable {
   border-collapse: collapse;
   width: 100%;
@@ -65,14 +59,14 @@ button:hover {
   padding: 10px;
   text-align: left;
   border: 1px solid #ddd;
-  border-radius: 0px; /* Slightly increased rounded corners */
+  border-radius: 0px;
 }
 
 .myTable th {
-  background-color: #3498db;
-  color: #fff; /* Header text color */
+  background-color: rgba(0, 110, 210, 0.1);
+  color: #fff;
 }
 
 .myTable a {
-  color: #fff; /* Anchor link text color */
+  color: #fff;
 }
