@@ -4,26 +4,18 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h2 {
-  color: white;
-  text-shadow: 2px 2px 15px rgba(0, 200, 260, 0.55);
-}
-
-pre {
-  font-size: 13px;
-}
-
-.image-text-container {
+header {
   background-color: rgba(24, 140, 210, 0.25);
   display: flex;
   align-items: center;
+  text-shadow: 2px 2px 15px rgba(0, 200, 260, 0.55);
   justify-content: center;
   text-align: center;
 }
 
-.image-text-container img {
-  width: 100px;
-  height: auto;
+pre {
+  font-size: 14px;
+  white-space: pre-wrap;
 }
 
 .image-text-container h3 {
@@ -32,6 +24,7 @@ pre {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 button {
