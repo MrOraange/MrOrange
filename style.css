@@ -13,18 +13,12 @@ header {
   justify-content: center; /* centres horizontally between left and right*/
 }
 
-pre {
-  font-size: 14px;
-  white-space: pre-wrap;
-}
-
-.image-text-container h3 {
-  margin-left: 10px;
+header a{
+  color: white;
 }
 
 a {
   text-decoration: none;
-  color: white;
 }
 
 button {
