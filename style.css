@@ -6,11 +6,11 @@ body {
 
 header {
   background-color: rgba(24, 140, 210, 0.25);
+ text-shadow: 2px 2px 15px rgba(0, 200, 260, 0.55);
+ text-align: center;
   display: flex;
-  align-items: center;
-  text-shadow: 2px 2px 15px rgba(0, 200, 260, 0.55);
-  justify-content: center;
-  text-align: center;
+  align-items: center; /* centers vertically between up and down*/
+  justify-content: center; /* centres horizontally between left and right*/
 }
 
 pre {
@@ -120,4 +120,12 @@ form p,legend {
     font-size: 14px;
     color: white;
     margin-top: 5px;
+}
+
+footer {
+  text-align: center
+}
+
+footer a{
+  color: cyan;
 }
