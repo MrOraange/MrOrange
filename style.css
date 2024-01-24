@@ -121,5 +121,6 @@ footer {
 }
 
 footer a{
-  color: cyan;
+  color: greenyellow;
+  text-decoration: underline;
 }
