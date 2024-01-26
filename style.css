@@ -9,8 +9,8 @@ header {
  text-shadow: 2px 2px 15px rgba(0, 200, 260, 0.55);
  text-align: center;
   display: flex;
-  align-items: center; /* centers vertically between up and down*/
-  justify-content: center; /* centres horizontally between left and right*/
+  align-items: center; /* centers between up and down*/
+  justify-content: center; /* centres between left and right*/
 }
 
 header a{
