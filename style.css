@@ -31,12 +31,14 @@ button {
   outline: none;
   background: linear-gradient(to
   right, #4D5057, #344044);
+  color: white;
   border: none;
   border-radius: 15px;
 }
 
 .myTable {
   border-collapse: collapse;
+  border-radius: 7;
   width: 100%;
   max-width: 270px;
 }
@@ -88,16 +90,17 @@ form select,
 form textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     border: 3px solid #ddd;
     border-radius: 4px;
     box-sizing: border-box;
 }
 
 form input[type="submit"] {
-    background: linear-gradient(to right, #ecf4f9, #3498db);
-    color: black;
-    padding: 10px 15px;
+    background: linear-gradient(to
+  right, #4D5057, #344044);
+    color: white;
+    padding: 10px 10px;
     font-size: 14px;
     border: none;
     border-radius: 15px;
