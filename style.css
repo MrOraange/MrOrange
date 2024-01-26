@@ -1,13 +1,12 @@
 body {
   color: white;
-  background: linear-gradient(to right, #001C38 , #003366);
+  background: linear-gradient(to right, #010101 , #282828);
   font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
-  background-color: rgba(24, 140, 210, 0.25);
- text-shadow: 2px 2px 15px rgba(0, 200, 260, 0.55);
- text-align: center;
+  background-color: rgba(24, 140, 210, 0.09);
+ text-shadow: 2px 2px 5px rgba(0, 200, 260, 0.55);
   display: flex;
   align-items: center; /* centers between up and down*/
   justify-content: center; /* centres between left and right*/
