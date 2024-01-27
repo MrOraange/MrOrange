@@ -126,3 +126,11 @@ footer a{
   color: greenyellow;
   text-decoration: underline;
 }
+
+details p {
+  background-color: rgba(24, 140, 210, 0.09);
+  width: 290px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 auto;
+}
