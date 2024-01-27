@@ -5,7 +5,8 @@ body {
 }
 
 header {
-  background-color: rgba(24, 140, 210, 0.09);
+  background: linear-gradient(to
+  right, #1C1F26, #344044);
  text-shadow: 2px 2px 5px rgba(0, 200, 260, 0.55);
   display: flex;
   align-items: center; /* centers between up and down*/
@@ -51,7 +52,8 @@ button {
 }
 
 .myTable th {
-  background-color: rgba(0, 110, 210, 0.1);
+  background: linear-gradient(to
+  right, #1C1F26, #344044);
   color: #fff;
 }
 
@@ -60,7 +62,8 @@ button {
 }
 
 form {
-    background-color: rgba(0, 100, 210, 0.1);
+    background: linear-gradient(to
+  right, #1C1F26, #344044);
     max-width: 300px;
     padding: 10px;
     border-radius: 15px;
@@ -128,7 +131,8 @@ footer a{
 }
 
 details p {
-  background-color: rgba(24, 140, 210, 0.09);
+  background: linear-gradient(to
+  right, #1C1F26, #344044);
   width: 290px;
   border-radius: 10px;
   padding: 10px;
