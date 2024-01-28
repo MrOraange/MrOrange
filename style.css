@@ -6,7 +6,7 @@ body {
 
 header {
   background: linear-gradient(to
-  right, #1C1F26, #344044);
+  right, #344044, #1C1F26);
  text-shadow: 2px 2px 5px rgba(0, 200, 260, 0.55);
   display: flex;
   align-items: center; /* centers between up and down*/
@@ -53,7 +53,7 @@ button {
 
 .myTable th {
   background: linear-gradient(to
-  right, #1C1F26, #344044);
+  right, #344044, #1C1F26);
   color: #fff;
 }
 
@@ -101,7 +101,7 @@ form textarea {
 
 form input[type="submit"] {
     background: linear-gradient(to
-  right, #4D5057, #344044);
+  right, #344044, #1C1F26);
     color: white;
     padding: 10px 10px;
     font-size: 14px;
@@ -132,7 +132,7 @@ footer a{
 
 details p {
   background: linear-gradient(to
-  right, #1C1F26, #344044);
+  right, #344044, #1C1F26);
   width: 290px;
   border-radius: 10px;
   padding: 10px;
