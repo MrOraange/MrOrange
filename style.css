@@ -6,7 +6,7 @@ body {
 
 header {
   background: linear-gradient(to
-  right, #344044, #1C1F26);
+  right, #1C1F26, #344044);
  text-shadow: 2px 2px 5px rgba(0, 200, 260, 0.55);
   display: flex;
   align-items: center; /* centers between up and down*/
@@ -101,7 +101,7 @@ form textarea {
 
 form input[type="submit"] {
     background: linear-gradient(to
-  right, #344044, #1C1F26);
+  right, #4D5057, #344044);
     color: white;
     padding: 10px 10px;
     font-size: 14px;
