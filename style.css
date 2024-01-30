@@ -1,12 +1,12 @@
 body {
   color: white;
-  background: linear-gradient(to right, #010101 , #282828);
+  background: linear-gradient(to right, #000000 , #000000);
   font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
   background: linear-gradient(to
-  right, #1C1F26, #344044);
+  right, #252929, #1C1F26);
  text-shadow: 2px 2px 5px rgba(0, 200, 260, 0.55);
   display: flex;
   align-items: center; /* centers between up and down*/
@@ -53,7 +53,7 @@ button {
 
 .myTable th {
   background: linear-gradient(to
-  right, #344044, #1C1F26);
+  right, #252929, #1C1F26);
   color: #fff;
 }
 
@@ -63,7 +63,7 @@ button {
 
 form {
     background: linear-gradient(to
-  right, #1C1F26, #344044);
+  right, #252929, #1C1F26);
     max-width: 300px;
     padding: 10px;
     border-radius: 15px;
@@ -132,7 +132,7 @@ footer a{
 
 details p {
   background: linear-gradient(to
-  right, #344044, #1C1F26);
+  right, #252929, #1C1F26);
   width: 290px;
   border-radius: 10px;
   padding: 10px;
