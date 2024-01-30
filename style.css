@@ -1,6 +1,8 @@
 body {
   color: white;
-  background: linear-gradient(to right, #000000 , #000000);
+  background: url(https://cdn.discordapp.com/attachments/1192812117150146571/1201917442356420618/Untitled62.jpg?ex=65cb8fd8&is=65b91ad8&hm=1001feb974f98cb032d7847656396ec5e59289e6069be6ba493c6bf1cfd7137c&);
+  background-size: 85%;
+  background-attachment: fixed;
   font-family: Arial, Helvetica, sans-serif;
 }
 
