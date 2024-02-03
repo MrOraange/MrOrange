@@ -1,6 +1,6 @@
 body {
   color: white;
-  background: url(https://cdn.discordapp.com/attachments/1192812117150146571/1201917442356420618/Untitled62.jpg?ex=65cb8fd8&is=65b91ad8&hm=1001feb974f98cb032d7847656396ec5e59289e6069be6ba493c6bf1cfd7137c&);
+  background: url(iopage_whatsappbg.jpg);
   background-size: 85%;
   background-attachment: fixed;
   font-family: Arial, Helvetica, sans-serif;
@@ -13,10 +13,6 @@ header {
   display: flex;
   align-items: center; /* centers between up and down*/
   justify-content: center; /* centres between left and right*/
-}
-
-header a{
-  color: white;
 }
 
 a {
@@ -42,7 +38,6 @@ button {
 
 .myTable {
   border-collapse: collapse;
-  border-radius: 7;
   width: 100%;
   max-width: 270px;
 }
@@ -51,16 +46,11 @@ button {
   padding: 10px;
   text-align: left;
   border: 1px solid #ddd;
-  border-radius: 0px;
 }
 
 .myTable th {
   background: linear-gradient(to
   right, #252929, #1C1F26);
-  color: #fff;
-}
-
-.myTable a {
   color: #fff;
 }
 
