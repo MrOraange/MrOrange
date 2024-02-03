@@ -40,12 +40,13 @@ button {
   border-collapse: collapse;
   width: 100%;
   max-width: 270px;
+  border: 0.5px solid #ddd;
 }
 
 .myTable th, .myTable td {
   padding: 10px;
   text-align: left;
-  border: 1px solid #ddd;
+  border: 0.5px solid #ddd;
 }
 
 .myTable th {
