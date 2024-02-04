@@ -33,7 +33,14 @@ button {
   color: white;
   border: none;
   border-radius: 15px;
-  opacity: 0.9;
+  opacity: 1;
+}
+
+button:hover {
+  opacity: 1;
+  border: solid 0.5px;
+  border-color: lightgreen;
+  background: rgba(0, 0, 0, 0)
 }
 
 .myTable {
@@ -95,11 +102,14 @@ form input[type="submit"] {
     border: none;
     border-radius: 15px;
     cursor: pointer;
-    opacity: 0.9;
+    opacity: 1;
 }
 
 form input[type="submit"]:hover {
     opacity: 1;
+  border: solid 0.5px;
+  border-color: lightgreen;
+  background: rgba(0, 0, 0, 0)
 }
 
 form p,legend {
