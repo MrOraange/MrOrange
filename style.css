@@ -46,7 +46,7 @@ button {
 .myTable th, .myTable td {
   padding: 10px;
   text-align: left;
-  border: 0.5px solid #ddd;
+  border: 1px solid #ddd;
 }
 
 .myTable th {
@@ -59,37 +59,30 @@ form {
     background: linear-gradient(to
   right, #252929, #1C1F26);
     max-width: 330px;
-    padding: 10px;
+    padding: 10px 10px;
     border-radius: 15px;
     margin: 0 left;
+    opacity: 0.9;
 }
 
 form fieldset {
     border: 1px solid #ddd;
     border-radius: 5px;
-    padding: 15px;
-    margin-bottom: 4px;
+    padding: 15px 15px;
 }
 
 form legend {
     font-weight: bold;
-    margin-bottom: 10px;
-}
-
-form label {
-    display: block;
-    margin-bottom: 20px;
-    color: #555;
 }
 
 form input,
 form select,
 form textarea {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 5px;
+    padding: 10px 10px;
+    margin-bottom: 10px;
     border: 3px solid #ddd;
-    border-radius: 4px;
+    border-radius: 10px;
     box-sizing: border-box;
 }
 
@@ -102,7 +95,7 @@ form input[type="submit"] {
     border: none;
     border-radius: 15px;
     cursor: pointer;
-    opacity: 1;
+    opacity: 0.9;
 }
 
 form input[type="submit"]:hover {
@@ -129,7 +122,7 @@ details p {
   right, #252929, #1C1F26);
   width: 290px;
   border-radius: 10px;
-  padding: 10px;
+  padding: 10px 15px;
   margin: 0 auto;
   opacity: 0.9;
 }
