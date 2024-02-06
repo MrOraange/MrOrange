@@ -142,6 +142,9 @@ footer a{
   text-decoration: underline;
 }
 
+details summary{
+  font-weight: 200;
+}
 details p {
   background: linear-gradient(to right, rgba(160, 165, 160, 0.7), rgba(168, 171, 178, 0.7));
   width: 290px;
@@ -149,4 +152,16 @@ details p {
   padding: 10px 15px;
   margin: 0 auto;
   opacity: 0.9;
+}
+
+.copyright a{
+  font-weight: 200;
+  text-decoration: none;
+  color: black;
+}
+
+.cr {
+  color: black;
+  background: #E7FFDB;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }

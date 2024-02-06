@@ -136,7 +136,7 @@ form p,legend {
 }
 
 footer {
-  text-align: center
+  text-align: center;
 }
 
 footer a{
@@ -144,6 +144,9 @@ footer a{
   text-decoration: underline;
 }
 
+details summary{
+  font-weight: 200;
+}
 details p {
   background: linear-gradient(to right, rgba(37, 41, 41, 0.7), rgba(28, 31, 38, 0.7));
   width: 290px;
@@ -151,4 +154,19 @@ details p {
   padding: 10px 15px;
   margin: 0 auto;
   opacity: 0.9;
+  font-weight: 200;
+}
+
+.copyright a{
+  font-weight: 200;
+  text-decoration: none;
+  color: white;
+}
+
+.cr {
+  font-weight: 300;
+  background: #005D4B;
+  padding: 10px 20px;
+  max-width: 250px;
+  border-radius: 1px 20px 20px 20px;
 }
