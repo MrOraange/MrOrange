@@ -8,12 +8,11 @@ body {
 
 header {
   background: linear-gradient(to right, rgba(37, 41, 41, 0.7), rgba(28, 31, 38, 0.7));
-  border-radius: 20px;
+  border-radius: 25px;
  text-shadow: 2px 2px 1px #2980b9;
   display: flex;
   align-items: center; /* centers between up and down*/
   justify-content: center; /* centres between left and right*/
-font-size: 16px;
 }
 
 header img{
@@ -26,23 +25,21 @@ a {
 }
 
 button {
-  display: inline-block;
-  padding: 9px 14px;
-  font-size: 14px;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  outline: none;
-  background: linear-gradient(to right, rgba(77, 80, 87, 0.8), rgba(52, 64, 68, 0.8));
   color: white;
+  display: inline-block;
+  padding: 10px 15px;
+  text-align: center;
+  cursor: pointer;
+  background: linear-gradient(to right, rgba(77, 80, 87, 0.8), rgba(52, 64, 68, 0.8));
   border: none;
   border-radius: 15px;
+  font-weight: 500;
 }
 
 button:hover {
   opacity: 1;
-  border: solid 0.5px;
-  border-color: lightgreen;
+  border: solid 1px;
+  border-color: #2980b9;
   background: rgba(0, 0, 0, 0)
 }
 
@@ -98,23 +95,22 @@ form input[type="submit"] {
     background: linear-gradient(to
   right, #4D5057, #344044);
     color: white;
-    padding: 10px 10px;
-    font-size: 14px;
+    padding: 10px;
     border: none;
     border-radius: 15px;
     cursor: pointer;
     opacity: 1;
+    font-weight: 500;
 }
 
 form input[type="submit"]:hover {
     opacity: 1;
-  border: solid 0.5px;
-  border-color: lightgreen;
+  border: solid 1px;
+  border-color: #2980b9;
   background: rgba(0, 0, 0, 0)
 }
 
 form p,legend {
-    font-size: 14px;
     color: white;
     margin-top: 5px;
 }
@@ -124,7 +120,7 @@ footer {
 }
 
 footer a{
-  color: lightgreen;
+  color: #3498db;
   text-decoration: underline;
 }
 
