@@ -1,0 +1,154 @@
+body {
+  color: white;
+  background: url(/Images/ioPage_dark-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background: linear-gradient(to right, rgba(37, 41, 41, 0.7), rgba(28, 31, 38, 0.7));
+  border-radius: 25px;
+ text-shadow: 2px 2px 1px #2980b9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header button{
+  border-radius: 30px;
+  padding: 1px;
+  background: rgba(0, 0, 0, 0);
+}
+header button:hover{
+  border: none;
+  background: rgba(0, 0, 0, 0);
+}
+
+
+.lh, .rh {
+  display: inline-block;
+}
+
+.lh {
+  display: flex;
+  align-items: center;
+}
+
+header img{
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  color: white;
+  display: inline-block;
+  padding: 10px 15px;
+  text-align: center;
+  cursor: pointer;
+  background: linear-gradient(to right, rgba(77, 80, 87, 0.8), rgba(52, 64, 68, 0.8));
+  border: none;
+  border-radius: 15px;
+  font-weight: 500;
+}
+
+button:hover {
+  opacity: 1;
+  border: solid 1px;
+  border-color: #2980b9;
+  background: rgba(0, 0, 0, 0)
+}
+
+.myTable {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 270px;
+  border: 0.5px solid #ddd;
+}
+
+.myTable th, .myTable td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.myTable th {
+  background: linear-gradient(to right, rgba(37, 41, 41, 0.7), rgba(28, 31, 38, 0.7));
+  color: #fff;
+}
+
+form {
+    background: linear-gradient(to right, rgba(37, 41, 41, 0.7), rgba(28, 31, 38, 0.7));
+    max-width: 330px;
+    padding: 10px 10px;
+    border-radius: 15px;
+    margin: 0 left;
+    opacity: 0.9;
+}
+
+form fieldset {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px 15px;
+}
+
+form legend {
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    border: 3px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+form input[type="submit"] {
+    background: linear-gradient(to
+  right, #4D5057, #344044);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    opacity: 1;
+    font-weight: 500;
+}
+
+form input[type="submit"]:hover {
+    opacity: 1;
+  border: solid 1px;
+  border-color: #2980b9;
+  background: rgba(0, 0, 0, 0)
+}
+
+form p,legend {
+    color: white;
+    margin-top: 5px;
+}
+
+footer {
+  text-align: center
+}
+
+footer a{
+  color: #3498db;
+  text-decoration: underline;
+}
+
+details p {
+  background: linear-gradient(to right, rgba(37, 41, 41, 0.7), rgba(28, 31, 38, 0.7));
+  width: 290px;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin: 0 auto;
+  opacity: 0.9;
+}

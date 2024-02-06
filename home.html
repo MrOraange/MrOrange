@@ -7,14 +7,19 @@
     <meta property="og:title" content="ioPage">
     <meta property="og:description" content="It is under development, you can join our discord for suggestions">
     <meta name="google-site-verification" content="VmYCz2iyjM0QPTYiBf-8I46DiEeU-4GKcU3MjSwY-_4" />
-    <link rel="icon" href="logo.svg" type="image/svg+xml">
-   <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="/Images/ioPage_logo.svg" type="image/svg+xml">
+   <link rel="stylesheet" type="text/css" href="/styles/style.css">
     <title>ioPage</title>
 </head>
 <body>
     <header>
-      <img src="logo.svg" alt="ioPage logo" height="40px">
-        <a href="https://iopage.github.io"><h1>ioPage.github.io</h1></a>
+      
+      <div class="lh"><img src="/Images/ioPage_logo.svg" alt="ioPage logo" height="40px">
+        <a href="https://iopage.github.io"><h1>ioPage</h1></a></div>
+        
+        <div class="rh"><button onclick="toggleCSS()"><img src="/Images/theme-icon.png" height="40px" alt="Change Theme"></button>
+        </div>
+        
     </header>
   <hr>
 <p>You can click on these buttons to know about my online connections:</p>
@@ -137,6 +142,26 @@
   <i>or</i><br>
   Join our <a href="https://discord.gg/j6cQezB2RM">Discord server</a></p>
   </details><hr>
+
+<script>
+    function toggleCSS() {
+        var styleLink = document.querySelector('link[href="/styles/style-light.css"]');
+
+        if (styleLink) {
+            // If the link exists, remove it
+            styleLink.remove();
+        } else {
+            // If the link doesn't exist, add it
+            styleLink = document.createElement('link');
+            styleLink.rel = 'stylesheet';
+            styleLink.type = 'text/css';
+            styleLink.href = '/styles/style-light.css';
+
+            document.head.appendChild(styleLink);
+        }
+    }
+</script>
+
 </footer>
 <body/>
 </html>
