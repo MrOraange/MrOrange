@@ -9,6 +9,7 @@ body {
 
 header {
   background: linear-gradient(to right, rgba(37, 41, 41, 0.7), rgba(28, 31, 38, 0.7));
+  transition: background 0.25s ease;
   border-radius: 25px;
  text-shadow: 2px 2px 1px #2980b9;
   display: flex;
@@ -55,6 +56,7 @@ button {
   border: none;
   border-radius: 15px;
   font-weight: 500;
+  transition: background 0.25s ease;
 }
 
 button:hover {
@@ -79,6 +81,7 @@ button:hover {
 
 .myTable th {
   background: linear-gradient(to right, rgba(37, 41, 41, 0.7), rgba(28, 31, 38, 0.7));
+  transition: background 0.25s ease;
   color: #fff;
 }
 
@@ -88,7 +91,8 @@ form {
     padding: 10px 10px;
     border-radius: 15px;
     margin: 0 left;
-    opacity: 0.9;
+    opacity: 1;
+    transition: background 0.25s ease;
 }
 
 form fieldset {
@@ -122,6 +126,7 @@ form input[type="submit"] {
     cursor: pointer;
     opacity: 1;
     font-weight: 500;
+    transition: background 0.25s ease;
 }
 
 form input[type="submit"]:hover {
@@ -154,7 +159,7 @@ details p {
   border-radius: 10px;
   padding: 10px 15px;
   margin: 0 auto;
-  opacity: 0.9;
+  opacity: 1;
   font-weight: 200;
 }
 
@@ -170,4 +175,5 @@ details p {
   padding: 10px 20px;
   max-width: 250px;
   border-radius: 1px 20px 20px 20px;
+  transition: background 0.1s ease;
 }
