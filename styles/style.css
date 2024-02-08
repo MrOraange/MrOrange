@@ -7,6 +7,10 @@ body {
   transition: background 0.25s ease;
 }
 
+.topnav {
+  
+}
+
 header {
   background: linear-gradient(to right, rgba(37, 41, 41, 0.7), rgba(28, 31, 38, 0.7));
   transition: background 0.25s ease;

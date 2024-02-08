@@ -13,13 +13,18 @@
 </head>
 <body>
     <header>
-      
-      <div class="lh"><img src="/Images/ioPage_logo.svg" alt="ioPage logo" height="40px">
-        <a href="https://iopage.github.io"><h1>ioPage</h1></a></div>
-        
-        <div class="rh"><button onclick="toggleCSS()"><img src="/Images/theme-icon.png" height="40px" alt="Change Theme"></button>
-        </div>
-        
+<div class="topnav">
+  <a href="#home" class="active"><img src="Images/ioPage_logo.svg" alt="ioPage Logo" height="20px">ioPage</a>
+  <div id="myLinks">
+    <a href="#news">About us</a>
+    <a href="#contact">Contact</a>
+    <a href="#about" id="toggleLink"><img src="/Images/theme-icon.png" height="20px" alt="Switch Theme">Switch Theme</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="Images/ioPage_hamburger.svg" alt="Menu" height="20px" >
+  </a>
+</div>
+
+ 
     </header>
   <hr>
 <p>You can click on these buttons to know about my online connections:</p>
@@ -147,24 +152,6 @@
   <a href="copyright.html">© ioPage 2023, All rights reserved </a>
 </footer>
 
-<script>
-    function toggleCSS() {
-        var styleLink = document.querySelector('link[href="/styles/style-light.css"]');
-
-        if (styleLink) {
-            // If the link exists, remove it
-            styleLink.remove();
-        } else {
-            // If the link doesn't exist, add it
-            styleLink = document.createElement('link');
-            styleLink.rel = 'stylesheet';
-            styleLink.type = 'text/css';
-            styleLink.href = '/styles/style-light.css';
-
-            document.head.appendChild(styleLink);
-        }
-    }
-</script>
-
+<<script src="main.js"></script>
 <body/>
 </html>
