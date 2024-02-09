@@ -8,41 +8,42 @@ body {
   margin: 0;
 }
 
-img {
-  padding: 0px 6px;
-}
-/*Top Bar*/
-.topbar {
-  overflow: hidden;
-  position: relative;
-}
-.topbar a {
-  padding: 14px 16px;
+.topnav {
   display: block;
-  display: flex;
-  align-items: center;
+}
+.topnav a{
+  color: white;
+  text-decoration: none;
+  padding: 20px;
 }
 
-/*Name and Menu icon*/
-.sitename {
-  background: linear-gradient(to right, rgba(37, 41, 41, 1), rgba(28, 31, 38, 1));
-  font-size: 25px;
-  font-weight: 1000;
+.top-name {
+  display: block;
+   background: linear-gradient(to right, rgba(77, 80, 87, 1), rgba(52, 64, 68, 1));
+   font-weight: 1000;
+   font-size: 32px;
+   padding: 5px;
 }
-a.hamburger {
-  background: rgba(0, 0, 0, 0.25);
+.top-menu {
   display: block;
   position: absolute;
-  right: 0;
   top: 0;
-  padding: 15px 10px;
+  right: 0;
+  background: black;
+  padding: 5px;
 }
 
-/*Menu Links*/
-.topbar #myLinks {
+#menulink {
   display: none;
-  background: linear-gradient(to right, rgba(37, 41, 41, 0.5), rgba(28, 31, 38, 0.5));
-} 
+}
+#menulink a{
+  display: block;
+  background: linear-gradient(to right, rgba(77, 80, 87, 0.8), rgba(52, 64, 68, 0.5));
+}
+#menulink a:hover{
+  background: linear-gradient(to right, rgba(77, 80, 87, 0.5), rgba(52, 64, 68, 0.5));
+  border: 0.5px solid greenyellow;
+}
 
 a {
   text-decoration: none;
