@@ -1,20 +1,17 @@
 body {
   color: black;
   background: #eee;
-  background-size: cover;
-  background-attachment: fixed;
   font-family: 'Open Sans', sans-serif;
-  transition: background 0.25s ease;
   margin: 0;
 }
 
 .topnav {
   position: relative;
   display: flexbox;
-  margin: 5px;
+  margin: 10px;
   background: white;
   border-radius:5px;
-  box-shadow: 0px 0px 1px lightslategrey;
+  box-shadow: 0px 0px 2.5px lightslategrey;
   padding: 10px;
   
 }
@@ -57,7 +54,6 @@ body {
 }
 #menulink a{
   display: block;
-  
   padding: 20px;
 }
 #menulink a:hover{
@@ -67,11 +63,11 @@ body {
 }
 
 #content {
-  margin: 5px;
+  margin: 10px;
   padding: 25px;
   background: white;
   border-radius: 5px;
-  box-shadow: 0px 0px 1px lightslategrey;
+  box-shadow: 0px 0px 2px lightslategrey;
 }
 
 .top-box {
@@ -105,7 +101,6 @@ button {
   border: none;
   border-radius: 15px;
   font-weight: 500;
-  transition: background 0.25s ease;
 }
 
 button:hover {
@@ -130,7 +125,6 @@ button:hover {
 
 .myTable th {
   background: linear-gradient(to right, rgba(37, 41, 41, 0.7), rgba(28, 31, 38, 0.7));
-  transition: background 0.25s ease;
   color: #fff;
 }
 
@@ -141,7 +135,6 @@ form {
     border-radius: 15px;
     margin: 0 left;
     opacity: 1;
-    transition: background 0.25s ease;
 }
 
 form fieldset {
@@ -175,7 +168,6 @@ form input[type="submit"] {
     cursor: pointer;
     opacity: 1;
     font-weight: 500;
-    transition: background 0.25s ease;
 }
 
 form input[type="submit"]:hover {
@@ -224,7 +216,6 @@ details p {
   width: 70%;
   padding: 10px 20px;
   border-radius: 1px 20px 20px 20px;
-  transition: background 0.1s ease;
   overflow-wrap: break-word;
   margin-left: 10px;
   margin-top: 10px;
