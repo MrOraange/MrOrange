@@ -37,8 +37,9 @@ body {
 .top-menu {
   position: absolute;
   display: inline-block;
-  right: 15px; /* Adjust the value based on your preference */
-  top: 15px; /* Adjust the value based on your preference */
+  flex-direction: right;
+  right: 10px; /* Adjust the value based on your preference */
+  top: 10px; /* Adjust the value based on your preference */
   padding: 10px; /* Adjust the value based on your preference */
 }
 .top-menu:hover {
