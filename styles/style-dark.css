@@ -1,0 +1,20 @@
+body {
+  background: darkgrey;
+  color: white;
+}
+
+.topnav a{
+  color: white;
+}
+.topnav a:hover {
+  background: darkgrey;
+}
+.topnav, #content {
+  background: gray;
+}
+.top-box {
+  background: linear-gradient(to bottom, #444 , #555);
+}
+#mylinks {
+ background: #000;
+}

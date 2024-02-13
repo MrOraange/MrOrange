@@ -1,5 +1,5 @@
-<svg width="120" height="100" xmlns="http://www.w3.org/2000/svg">
-  <rect width="120" height="20" rx="10px" x="0" y="0" fill="grey" />
-  <rect width="120" height="20" rx="10px" x="0" y="40" fill="grey" />
-  <rect width="120" height="20" rx="10px" x="0" y="80" fill="grey" />
+<svg width="280" height="240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="250" height="20" rx="10px" x="15" y="30" fill="black" />
+  <rect width="250" height="20" rx="10px" x="15" y="110" fill="black" />
+  <rect width="250" height="20" rx="10px" x="15" y="190" fill="black" />
 </svg>

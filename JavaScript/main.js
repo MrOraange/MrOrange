@@ -10,7 +10,7 @@ function myFunction() {
 
 //Theme toggle function
 function toggleCSS() {
-    var styleLink = document.querySelector('link[href="/styles/style-light.css"]');
+    var styleLink = document.querySelector('link[href="/styles/style-dark.css"]');
 
     if (styleLink) {
         // If the link exists, remove it
@@ -20,7 +20,7 @@ function toggleCSS() {
         styleLink = document.createElement('link');
         styleLink.rel = 'stylesheet';
         styleLink.type = 'text/css';
-        styleLink.href = '/styles/style-light.css';
+        styleLink.href = '/styles/style-dark.css';
 
         document.head.appendChild(styleLink);
     }

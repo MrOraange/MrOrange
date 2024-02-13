@@ -1,50 +1,95 @@
 body {
-  color: white;
-  background: url(/Images/ioPage_dark-bg.jpg);
+  color: black;
+  background: #eee;
   background-size: cover;
   background-attachment: fixed;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   transition: background 0.25s ease;
   margin: 0;
 }
 
 .topnav {
-  display: block;
+  position: relative;
+  display: flexbox;
+  margin: 5px;
+  background: white;
+  border-radius:5px;
+  box-shadow: 0px 0px 1px lightslategrey;
+  padding: 10px;
+  
 }
 .topnav a{
-  color: white;
+  color: black;
   text-decoration: none;
-  padding: 20px;
 }
 
+/*Inside topnav bar*/
 .top-name {
-  display: block;
-   background: linear-gradient(to right, rgba(77, 80, 87, 1), rgba(52, 64, 68, 1));
+  display: inline-block;
    font-weight: 1000;
    font-size: 32px;
-   padding: 5px;
+   padding: 10px;
 }
+.top-name:hover {
+  outline: 0.5px solid lightslategrey;
+  border-radius: 5px;
+  background: #eee;
+}
+
 .top-menu {
-  display: block;
   position: absolute;
-  top: 0;
-  right: 0;
-  background: black;
-  padding: 5px;
+  display: inline-block;
+  right: 15px; /* Adjust the value based on your preference */
+  top: 15px; /* Adjust the value based on your preference */
+  padding: 10px; /* Adjust the value based on your preference */
+}
+.top-menu:hover {
+  outline: 0.5px solid lightslategrey;
+  border-radius: 5px;
+  background: #eee;
 }
 
 #menulink {
+  margin-top: 10px;
   display: none;
+  background: rgba(220, 220, 220, 0.85);
+  border-radius: 10px;
 }
 #menulink a{
   display: block;
-  background: linear-gradient(to right, rgba(77, 80, 87, 0.8), rgba(52, 64, 68, 0.5));
+  
+  padding: 20px;
 }
 #menulink a:hover{
-  background: linear-gradient(to right, rgba(77, 80, 87, 0.5), rgba(52, 64, 68, 0.5));
-  border: 0.5px solid greenyellow;
+  box-shadow: 0px 0px 5px lightslategrey;
+  background: #eee;
+  border-radius: 10px;
 }
 
+#content {
+  margin: 5px;
+  padding: 25px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 1px lightslategrey;
+}
+
+.top-box {
+  margin: 5px;
+  padding: 20px;
+  background: linear-gradient(to bottom, #ccc, #eee);
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #2980b9;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+
+
+
+
+/**not in use**/
 a {
   text-decoration: none;
   color: white;
@@ -170,7 +215,7 @@ details p {
 .copyright a{
   font-weight: 200;
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .cr {

@@ -8,29 +8,37 @@
     <meta property="og:description" content="It is under development, you can join our discord for suggestions">
     <meta name="google-site-verification" content="VmYCz2iyjM0QPTYiBf-8I46DiEeU-4GKcU3MjSwY-_4" />
     <link rel="icon" href="/Images/ioPage_logo.svg" type="image/svg+xml">
-    <title>ioPage without css</title>
+   <link rel="stylesheet" type="text/css" href="/styles/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>ioPage</title>
 </head>
 <body>
+  
     <header>
-      
-      <div class="lh"><img src="/Images/ioPage_logo.svg" alt="ioPage logo" height="40px">
-        <a href="https://iopage.github.io"><h1>ioPage</h1></a></div>
-        
+      <div class="topnav">
+ <a href="https://iopage.github.io" class="top-name">
+   
+   <img src="/Images/ioPage_logo.svg" alt="" height="40px">
+   
+   ioPage</a>
+ <a class="top-menu" href="javascript:void(0);" onclick="myFunction()"><img src="/Images/ioPage_Hamburger.svg" height="33.5px"></a>
+ <div id="menulink">
+   <a href="#">About</a>
+   <a href="#">Contact</a>
+   <a href="#">Disclaimer</a>
+   <a href="#theme" id="toggleLink">Switch Theme</a>
+ </div>
+</div>
     </header>
-  <hr>
-<p>You can click on these buttons to know about my online connections:</p>
 
-<a href="https://youtube.com/clydizgamer"><button type="button">My YouTube Channel</button></a><br><br>
-
-<a href="https://discord.com/invite/QPkEPQEkWE"><button type="button">My Discord server</button></a><br><br>
-
-<hr>
 <h4>1. Tables</h4>
 <p>
   My favourite Games (available on Play Store):<pre>(C = category)</pre>
   </table>
   <br>
-  <table border="1px" class="myTable">
+  <table class="myTable">
     <tr>
       <th>C1</th><th>Games that you can play alone</th>
     </tr>
@@ -69,7 +77,7 @@
     </tr>
   </table>
   <br>
-  <table border="1px" class="myTable">
+  <table class="myTable">
      <tr>
       <th>C2</th><th>Games in which you need<br>someone besids you for fun</th>
     </tr>
@@ -90,7 +98,7 @@
     </tr>
   </table>
 </p>
-<p>&#128161 <strong>Tip: </strong>You can click the names to get redirected to the Play Store link of the games.</p>
+<p style="font-size: 14px;">&#128161 <strong>Tip: </strong>You can click the names to get redirected to the Play Store link of the games.</p>
 <hr>
 <h4>2. List</h4>
 <p>Best apps</p>
@@ -119,7 +127,7 @@
   <p>Yesterday's date:</p><input type="date"><br>
   <p>77+33?</p><input type="number">
   </fieldset>
-  <p>Never share sensitive information</p>
+  <p style="font-size:14px">Never share sensitive information</p>
   <input type="submit">
 </form>
 <hr>
@@ -128,16 +136,12 @@
 </canvas>
 <hr>
 <footer>
-  <p>Go back to the original home page: <a href="index.html">Let's Go!!</a></p>
-  <details>
-  <summary><strong>For contact</strong></summary><br>
-  <p>DM on discord:- clydiz (username)<br>
-  <i>or</i><br>
-  Join our <a href="https://discord.gg/j6cQezB2RM">Discord server</a></p>
-  </details>
+  <p>Let's see the page without css styling: <a href="nocss.html">Let's Go!!</a></p>
 </footer><hr>
 <footer class="copyright">
-  <a href="https://iopage.github.io/copyright">© ioPage 2023, All rights reserved </a>
+  <a href="copyright.html">© ioPage 2023, All rights reserved </a>
 </footer>
+
+<script src="main.js"></script>
 <body/>
 </html>
