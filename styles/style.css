@@ -8,12 +8,14 @@ body {
 
 .topnav {
   position: relative;
-  display: flexbox;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 5px;
+  padding: 10px;
   background: white;
   border-radius:5px;
   box-shadow: 0px 0px 2.5px lightslategrey;
-  padding: 10px;
   transition: background ease 0.25s;
 }
 .topnav a{
@@ -23,7 +25,6 @@ body {
 
 /*Inside topnav bar*/
 .top-name {
-  display: inline-block;
    font-weight: 1000;
    font-size: 32px;
    padding: 10px;
@@ -35,12 +36,7 @@ body {
 }
 
 .top-menu {
-  position: absolute;
-  display: inline-block;
-  flex-direction: right;
-  right: 10px; /* Adjust the value based on your preference */
-  top: 10px; /* Adjust the value based on your preference */
-  padding: 10px; /* Adjust the value based on your preference */
+  padding: 10px;
 }
 .top-menu:hover {
   outline: 0.5px solid lightslategrey;
@@ -49,7 +45,7 @@ body {
 }
 
 #menulink {
-  margin-top: 10px;
+  margin: 5px;
   display: none;
   background: rgba(220, 220, 220, 0.85);
   border-radius: 10px;
