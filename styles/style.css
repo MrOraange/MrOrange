@@ -34,8 +34,8 @@ border-radius: 5px;
    font-size: 32px;
    padding: 10px;
 }
-.top-name:hover {
-  outline: 0.5px solid lightslategrey;
+.top-name a:hover {
+  outline: 0.5px solid black;
   border-radius: 5px;
   background: #eee;
 }
