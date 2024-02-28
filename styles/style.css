@@ -1,80 +1,102 @@
+*{
+  transition: all ease 0.25s;
+}
 body {
   color: black;
   background: #eee;
   font-family: 'Open Sans', sans-serif;
   margin: 0;
-  transition: background ease 0.1s;
 }
-
-
-header {
- margin: 5px;
+body a{
+  color: black;
+  text-decoration: none;
+}
+.topbar {
+  margin: 5px;
+  
+  display: flex;
+  flex-direction: column;
+  
+  position: sticky;
+  top: 0;
+}
+.topbar-scroll {
+  margin: 0;
+  padding: 0px;
+}
+.topbar a{
+  display: inline-block;
+  padding: 10px;
+}
+.topline {
   padding: 10px;
   
-  background: white;
-  border-radius:5px;
-  box-shadow: 0px 0px 2.5px lightslategrey;
-  transition: background ease 0.25s;
-}
-.topnav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   
-border-radius: 5px;
+  font-size: 32px;
+  font-weight: 400;
+  
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2.5px lightslategrey;
 }
-.topnav a{
-  color: #111;
-  text-decoration: none;
+.topline-scroll{
+  padding: 0;
+  font-size: 26px;
+  background-color: rgba(220, 246, 255, 0.25);
+  backdrop-filter: blur(5px);
+  
+  border-radius: 0px;
+  box-shadow: 0px 0px 0px #000;
 }
-
-/*Inside topnav bar*/
-.top-name {
-   font-weight: 1000;
-   font-size: 32px;
-   padding: 10px;
+.topline a img{
+  height: 32px;
 }
-.top-name a:hover {
-  outline: 0.5px solid black;
-  border-radius: 5px;
-  background: #eee;
-}
-
-.top-menu {
-  padding: 10px;
-}
-.top-menu:hover {
+.topline a:hover {
   outline: 0.5px solid lightslategrey;
   border-radius: 5px;
-  background: #eee;
+  background: #F7F7F7;
 }
 
-#menulink {
+.topmenu {
   margin-top: 5px;
   padding: 10px;
+  
   display: none;
-  background: rgba(220, 220, 220, 0.85);
-  border-radius: 5px;
-  box-shadow: 0px 0px 2.5px lightslategray;
-  transition: background ease 0.25s;
-}
-#menulink a{
-  display: block;
-  padding: 20px;
-}
-#menulink a:hover{
-  box-shadow: 0px 0px 5px lightslategrey;
-  background: #eee;
+  flex-direction: column;
+  
+  background: white;
   border-radius: 10px;
+  box-shadow: 0px 0px 2.5px lightslategrey;
+  
+}
+.topmenu-scroll {
+  background-color: rgba(220, 246, 255, 0.25);
+  backdrop-filter: blur(5px);
+  border-radius: 0px;
+  box-shadow: 0px 0px 1px #000;
+  margin-top: 0;
 }
 
-#content {
+.topmenu a{
+  display: block;
+  padding: 15px 20px;
+}
+.topmenu a:hover{
+  box-shadow: 0px 0px 2.5px lightslategrey;
+  background: #eee;
+  border-radius: 15px;
+
+}
+
+#content{
   margin: 5px;
   padding: 25px;
   background: white;
   border-radius: 5px;
   box-shadow: 0px 0px 2.5px lightslategrey;
-  transition: background ease 0.25s;
 }
 
 .top-box {
@@ -85,7 +107,6 @@ border-radius: 5px;
   box-shadow: 0px 0px 5px #2980b9;
   margin-top: 30px;
   margin-bottom: 30px;
-  transition: background ease 0.25s;
 }
 
 footer {
@@ -100,10 +121,7 @@ footer {
 }
 
 
-
-
-
-/**not in use**/
+/**not in use**
 a {
   text-decoration: none;
   color: black;
@@ -217,4 +235,5 @@ details p {
   opacity: 1;
   font-weight: 200;
 }
+//
 
