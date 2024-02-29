@@ -1,40 +1,38 @@
 body {
   color: white;
   background: #363940;
-  
 }
-a {
-  color: white;
-}
-header {
-background: #1C1D22;
-  box-shadow: 0px 0px 2.5px #4F535C;
-}
-
-.topnav a{
+body a{
   color: white;
 }
 
-.top-name:hover {
+.topline{
+  background: #1C1D22;
+  box-shadow: 0px 0px 2.5px lightslategrey;
+}
+.topline-scroll{
+  background-color: rgba(220, 246, 255, 0.25);
+  backdrop-filter: blur(5px);
+}
+.topline a:hover {
   background: #363940;
   outline: 0.5px solid #4F535C;
+}
+.topline .rs img{
+  filter: brightness(15);
 }
 
-.top-menu img{
-  filter: brightness(10);
-}
-.top-menu:hover {
-  background: #363940;
-  outline: 0.5px solid #4F535C;
-}
-#menulink {
+.topmenu {
   background: #27272F;
 }
-#menulink a:hover {
-  background: rgba(24, 25, 27, 0.85);
-  box-shadow: 0px 0px 5px #4F535C;
+.topmenu a:hover {
+  background: #1F2126;
+  box-shadow: 0px 0px 2.5px #4F535C;
 }
-
+.topmenu-scroll{
+  background-color: rgba(220, 246, 255, 0.25);
+  backdrop-filter: blur(5px);
+}
 #content {
   background: #1C1D22;
 }

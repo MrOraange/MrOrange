@@ -21,8 +21,9 @@ function inFunction() {
 function toggleCSS() {
   var styleLink = document.querySelector('link[href="/styles/style-dark.css"]');
 
-  if (styleLink) {styleLink.remove();}
-  else {
+  if (styleLink) {
+    styleLink.remove();
+  } else {
     styleLink = document.createElement('link');
     styleLink.rel = 'stylesheet';
     styleLink.type = 'text/css';
@@ -31,10 +32,16 @@ function toggleCSS() {
     document.head.appendChild(styleLink);
   }
 }
+
 var toggleLink = document.getElementById("toggleLink");
+
 if (toggleLink) {
-  toggleLink.addEventListener("click", toggleCSS);
+  toggleLink.addEventListener("click", function(event) {
+    event.preventDefault(); // This prevents the default behavior (scrolling to the top)
+    toggleCSS();
+  });
 }
+
 
 //Function scroll
 function handleScroll(elementClass, scrollThreshold) {
