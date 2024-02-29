@@ -7,6 +7,15 @@ function myFunction() {
     menu.style.display = "flex";
   }
 }
+//Hamburger More function
+function inFunction() {
+  var menu = document.getElementsByClassName("topmenu-more")[0];
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
+}
 
 // Theme toggle function
 function toggleCSS() {

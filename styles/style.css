@@ -1,6 +1,6 @@
 *{
   transition: all ease 5s;
-  transition: background ease 5s;
+  transition: background ease 0.1s;
 }
 body {
   color: black;
@@ -40,7 +40,7 @@ body a{
   font-weight: 400;
   
   background: white;
-  border-radius: 10px;
+  border-radius: 15px;
   box-shadow: 0px 0px 2.5px lightslategrey;
 }
 .topline-scroll{
@@ -80,6 +80,9 @@ body a{
   box-shadow: 0px 0px 1px #000;
   margin-top: 0;
 }
+.topmenu-more{
+  display: none;
+}
 
 .topmenu a{
   display: block;
@@ -89,14 +92,13 @@ body a{
   box-shadow: 0px 0px 2.5px lightslategrey;
   background: #eee;
   border-radius: 15px;
-
 }
 
 #content{
   margin: 5px;
   padding: 25px;
   background: white;
-  border-radius: 5px;
+  border-radius: 15px;
   box-shadow: 0px 0px 2.5px lightslategrey;
 }
 
@@ -108,6 +110,54 @@ body a{
   box-shadow: 0px 0px 5px #2980b9;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 500px) {
+  body{
+    margin: 0px;
+  }
+  .topbar{
+    padding: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 2.5px lightslategrey;
+  }
+  .topbar-scroll{
+    background-color: rgba(220, 246, 255, 0.25);
+  backdrop-filter: blur(5px);
+  
+  border-radius: 0px;
+  padding: 0;
+  box-shadow: 0px 0px 0px #000;
+  }
+  .topline{
+    padding: 0px;
+  
+    background: rgba(0, 0, 0, 0);
+    border-radius: 0px; 
+    box-shadow: 0px 0px 0px #000;
+  }
+  .topline .rs{
+    display: none;
+  }
+  .topmenu {
+    margin-top: 0px;
+    padding: 0px;
+  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  
+    background: rgba(0, 0, 0, 0);
+    border-radius: 0px; 
+    box-shadow: 0px 0px 0px #000;
+  }
+  #content{
+    padding: 35px;
+  }
 }
 
 footer {
