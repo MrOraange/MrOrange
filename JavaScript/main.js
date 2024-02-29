@@ -10,10 +10,10 @@ function myFunction() {
 //Hamburger More function
 function inFunction() {
   var menu = document.getElementsByClassName("topmenu-more")[0];
-  if (menu.style.display === "block") {
+  if (menu.style.display === "flex") {
     menu.style.display = "none";
   } else {
-    menu.style.display = "block";
+    menu.style.display = "flex";
   }
 }
 
