@@ -42,4 +42,4 @@ function handleScroll(elementClass, scrollThreshold) {
 // Usage
 handleScroll('topbar', 200);
 handleScroll('topline', 200);
-handleScroll('topmenu', 100); 
+handleScroll('topmenu', 200); 

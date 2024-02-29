@@ -1,5 +1,6 @@
 *{
-  transition: all ease 0.25s;
+  transition: all ease 5s;
+  transition: background ease 5s;
 }
 body {
   color: black;
