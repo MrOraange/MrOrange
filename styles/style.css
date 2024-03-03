@@ -1,6 +1,9 @@
 *{
   transition: background ease 0.25s!important;
 }
+*::selection{
+  background: #8AC2FF;
+}
 /*More and nav*/
 #navmore-desktop{
   display: none;
@@ -42,7 +45,7 @@ body a{
   justify-content: space-between;
   align-items: center;
   
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 400;
   
   background: white;

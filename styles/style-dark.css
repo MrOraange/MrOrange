@@ -1,3 +1,7 @@
+*::selection{
+  background: #3676B2E0;
+  color: #eee;
+}
 body {
   color: white;
   background: #363940;
