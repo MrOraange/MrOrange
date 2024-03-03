@@ -4,46 +4,61 @@
     <meta property="og:title" content="ioPage">
     <meta property="og:description" content="It is under development, you can join our discord for suggestions">
     <meta name="description" content="This website will have posts of different topics.">
-    
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2NNGWHC6ZC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2NNGWHC6ZC');
+</script> 
     <meta name="google-site-verification" content="VmYCz2iyjM0QPTYiBf-8I46DiEeU-4GKcU3MjSwY-_4" />
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-   <link rel="icon" href="/Images/ioPage_logo.svg" type="image/svg+xml">
+   <link rel="icon" href="/Images/iopage-logo.svg" type="image/svg+xml">
    <link rel="stylesheet" type="text/css" href="/styles/style.css">
-
     <title>ioPage</title>
 </head>
-
 <body>
-  
-  
     <header class="topbar">
-  
+    
   <div class="topline">
     <div class="ls">
       <a href="https://ioPage.github.io"><img src="/Images/iopage-logo.svg" alt=""></a>
       <a href="#">ioPage</a>
     </div>
     <div class="rs">
-      <a href="javascript:void(0);" onclick="myFunction()"><img src=
-      "/Images/iopage-hamburger.svg" alt=""></a>
+      <a href="javascript:void(0);" onclick="hamburgerPhone()"><img src="/Images/iopage-hamburger.svg" alt=""></a>
     </div>
   </div>
   
   <nav class="topmenu">
+     <a href="#" id="toggleLink">Switch Theme</a>
     <a href="/Navigations/Links/Articles/mainpage.html">Top Articles</a>
-    <a href="/Navigations/Links/Projects/mainpage.html">Top Projects</a>
-    <a href="/Navigations/Pages/contact.html">Contact Us</a>
-    <a href="#" id="toggleLink">Switch Theme</a>
-  </nav>
+    
+    
+    <a href="javascript:void(0);" onclick="morePhone()" id="navmore-phone">More &#9662; (phone)</a>
+     <a href="javascript:void(0);" onclick="moreDesktop()" id="navmore-desktop">More &#9662; (pc)</a>
+ <nav class="topmenu-more">
   
+  <a href="/Navigations/Links/Projects/mainpage.html">Top Projects</a>
+       <a href="/Navigations/Pages/contact.html">Contact Us</a>
+ </nav>
+    </nav>
     </header>
-       <div class="top-box">
+    <nav class="onlyfordesktop-more">
+        <a href="/Navigations/Links/Projects/mainpage.html">Top Projects</a>
+    <a href="/Navigations/Pages/contact.html">Contact Us</a>
+
+    </nav>
+    
+    
+<div id="content">
+         <div class="top-box">
        Site is under development, the articles and projects will be uploaded soon.<br><br>
        If you want us to add your projects also join our discord server: <a href="https://discord.com/invite/2DsjTK66Zx">https://discord.gg/2DsjTK66Zx</a>
      </div> 
@@ -52,6 +67,7 @@
      </div>
      
      
+</div>
      
      <footer class="copyright">
   <a href="/Navigations/Pages/copyright.html">© ioPage 2023, All rights reserved </a>

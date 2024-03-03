@@ -32,20 +32,30 @@
       <a href="#">ioPage</a>
     </div>
     <div class="rs">
-      <a href="javascript:void(0);" onclick="myFunction()"><img src="/Images/iopage-hamburger.svg" alt=""></a>
+      <a href="javascript:void(0);" onclick="hamburgerPhone()"><img src="/Images/iopage-hamburger.svg" alt=""></a>
     </div>
   </div>
   
   <nav class="topmenu">
+     <a href="#" id="toggleLink">Switch Theme</a>
     <a href="/Navigations/Links/Articles/mainpage.html">Top Articles</a>
-    <a href="/Navigations/Links/Projects/mainpage.html">Top Projects</a>
-    <a href="javascript:void(0);" onclick="inFunction()">More &#9662;</a>
+    
+    
+    <a href="javascript:void(0);" onclick="morePhone()" id="navmore-phone">More &#9662; (phone)</a>
+     <a href="javascript:void(0);" onclick="moreDesktop()" id="navmore-desktop">More &#9662; (pc)</a>
  <nav class="topmenu-more">
+  
+  <a href="/Navigations/Links/Projects/mainpage.html">Top Projects</a>
        <a href="/Navigations/Pages/contact.html">Contact Us</a>
-    <a href="#" id="toggleLink">Switch Theme</a>
  </nav>
     </nav>
     </header>
+    <nav class="onlyfordesktop-more">
+        <a href="/Navigations/Links/Projects/mainpage.html">Top Projects</a>
+    <a href="/Navigations/Pages/contact.html">Contact Us</a>
+
+    </nav>
+    
     
     <div id="content">
       
@@ -77,6 +87,9 @@
      
     </div>
     
+    <footer class="connections">
+<i class="fi fi-brands-youtube"></i>
+    </footer>
 <footer class="copyright">
   <a href="/Navigations/Pages/copyright.html">© ioPage 2023, All rights reserved </a>
 </footer>

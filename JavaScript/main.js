@@ -1,5 +1,5 @@
 // Hamburger Function
-function myFunction() {
+function hamburgerPhone() {
   var menu = document.getElementsByClassName("topmenu")[0];
   if (menu.style.display === "flex") {
     menu.style.display = "none";
@@ -8,7 +8,7 @@ function myFunction() {
   }
 }
 //Hamburger More function
-function inFunction() {
+function morePhone() {
   var menu = document.getElementsByClassName("topmenu-more")[0];
   if (menu.style.display === "flex") {
     menu.style.display = "none";
@@ -16,8 +16,16 @@ function inFunction() {
     menu.style.display = "flex";
   }
 }
+function moreDesktop() {
+  var menu = document.getElementsByClassName("onlyfordesktop-more")[0];
+  if (menu.style.display === "flex") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "flex";
+  }
+}
 
-// Theme toggle function
+//Theme phone
 function toggleCSS() {
   var styleLink = document.querySelector('link[href="/styles/style-dark.css"]');
 
@@ -43,19 +51,21 @@ if (toggleLink) {
 }
 
 
-//Function scroll
-function handleScroll(elementClass, scrollThreshold) {
-    var menu = document.querySelector('.' + elementClass);
+//scroll
 
-    window.addEventListener('scroll', function() {
-        if (document.documentElement.scrollTop > scrollThreshold) {
-            menu.classList.add(elementClass + '-scroll');
-        } else {
-            menu.classList.remove(elementClass + '-scroll');
-        }
-    });
+function handleScroll(elementClass, scrollThreshold) {
+ var menu = document.querySelector('.' + elementClass);
+
+ window.addEventListener('scroll', function() {
+  if (document.documentElement.scrollTop > scrollThreshold) {
+   menu.classList.add(elementClass + '-scroll');
+  } else {
+   menu.classList.remove(elementClass + '-scroll');
+  }
+ });
 }
 // Usage
 handleScroll('topbar', 200);
 handleScroll('topline', 200);
-handleScroll('topmenu', 200); 
+handleScroll('topmenu', 200);
+handleScroll('onlyfordesktop-more', 200)
