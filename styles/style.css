@@ -121,7 +121,7 @@ body a{
   margin-top: 30px;
   margin-bottom: 30px;
 }
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 690px) {
   body{
     margin: 0px;
   }
