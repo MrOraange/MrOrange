@@ -4,6 +4,9 @@ body {
 *{
   color: #fff;
 }
+*::selection {
+  background: #FFFFFF3B;
+}
 a {
   color: #fff;
 }
