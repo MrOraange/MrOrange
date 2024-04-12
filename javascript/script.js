@@ -9,7 +9,7 @@ function ham() {
     close.classList.remove('ri-close-line');
   } else {
     nav.style.display = 'flex';
-    nav.style.animation = 'popup 0.1s ease';
+    nav.style.animation = 'popup 0.2s ease';
     menu.classList.add('ri-close-line');
     menu.classList.remove('ri-menu-line');
   }
