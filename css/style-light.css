@@ -7,7 +7,10 @@ body {
 }
 *{
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  font-family: Arial, Helvetica, sans-serif;
+  
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+
   color: #000;
 }
 *::selection {
@@ -104,7 +107,7 @@ a {
   width: calc(100%-10px);
   height: fit-content;
   
-  padding: 30px;
+  padding: 5px;
   
   background-color: #FFF;
   border-radius: 15px;
@@ -114,6 +117,7 @@ a {
   display: flex;
   flex-direction: column;
   margin-top: 100px;
+  padding: 25px;
   gap: 10px;
 }
 .intro h1{
@@ -190,7 +194,46 @@ a {
   }
 }
 
+.contents-view-title {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 16px;
+  margin: 10px;
+}
+.contents-view-title .coloured {
+  background: -webkit-linear-gradient(#3C6E47, #13A98A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contents-view-title .viewall {
+  transition: all ease 0.1s;
+}
+.contents-view-title .viewall:hover {
+  background: #78DC1157;
+  outline: 7px solid #78DC1157;
+  border-radius: 1px;
+}
 .top-box {
+  overflow: hidden;
+  margin: 20px;
+  background: linear-gradient(to bottom, #ccc, #eee);
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #2980b9;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.top-box img {
+  background: #FFFFFF;
+  height: 100px;
+  padding: 10px;
+}
+.top-box p {
+  margin: 25px;
+}
+
+.tol-box {
   margin: 20px;
   padding: 25px;
   background: linear-gradient(to bottom, #ccc, #eee);
