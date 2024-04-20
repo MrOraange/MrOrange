@@ -215,33 +215,30 @@ a {
   outline: 7px solid #78DC1157;
   border-radius: 1px;
 }
-.top-box {
-  overflow: hidden;
+.project-list {
+  display: flex;
   margin: 20px;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.top-box {
+  width: 350px;
+  overflow: hidden;
   background: linear-gradient(to bottom, #ccc, #eee);
   border-radius: 5px;
   box-shadow: 0px 0px 5px #2980b9;
   margin-top: 30px;
   margin-bottom: 30px;
-}
-.top-box img {
-  background: #FFFFFF;
-  height: 100px;
-  padding: 10px;
-}
-.top-box p {
-  margin: 25px;
+  
+  padding: 20px;
 }
 
-.tol-box {
-  margin: 20px;
-  padding: 25px;
-  background: linear-gradient(to bottom, #ccc, #eee);
-  border-radius: 5px;
-  box-shadow: 0px 0px 5px #2980b9;
-  margin-top: 30px;
-  margin-bottom: 30px;
+.top-box img {
+  background: #FFFFFF;
+  width: 100%;
+  height: auto;
 }
+
 .copyright {
   display: flex;
   justify-content: center;
