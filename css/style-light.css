@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 body {
   margin: 0px;
   padding: 0px;
@@ -102,7 +104,7 @@ a {
   background-color: #F7F7F7;
 }
 
-.content {
+main {
   margin: 5px;
   width: calc(100%-10px);
   height: fit-content;
@@ -130,7 +132,7 @@ a {
 }
 .intro p{
   margin: 10px;
-  font-weight: 350;
+  font-weight: 400;
   color: #242424;
 }
 
@@ -141,8 +143,9 @@ a {
   gap: 15px;
 }
 .intro-text-buttons button {
-  padding: 10px 25px;
+  padding: 10px 20px;
   font-size: 16px;
+  
   border-radius: 7px;
   border: none;
   
@@ -197,8 +200,7 @@ a {
 .contents-view-title {
   display: flex;
   justify-content: space-between;
-  font-weight: 700;
-  font-size: 16px;
+  font-weight: 600;
   margin: 10px;
 }
 .contents-view-title .coloured {
@@ -229,14 +231,16 @@ a {
   box-shadow: 0px 0px 5px #2980b9;
   margin-top: 30px;
   margin-bottom: 30px;
-  
-  padding: 20px;
 }
 
 .top-box img {
   background: #FFFFFF;
   width: 100%;
   height: auto;
+}
+
+.top-box div {
+  padding: 20px;
 }
 
 .copyright {
