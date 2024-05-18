@@ -49,17 +49,36 @@
     <a href="/articles.html">Articles</a>
     <a href="/contact.html">Contact</a>
   </div>
-  
+  <style>
+    main {
+      padding: 20px;
+    }
+    #table {
+      margin: 30px;
+      padding: 10px;
+      outline: 0.5px solid black;
+    }
+  </style>
   <main>
-    <h4 style="padding: 5px">This is just a preview, To view it working <a href="https://htmlpreview.github.io/?https://github.com/iopage/google-homepage/blob/main/index.html">"click here"</a></h4>
-      <iframe style=" max-width: 100%; transform: scale(0.9); border: 1px solid grey; float: left;" width="500px" height="712px" src="https://htmlpreview.github.io/?https://github.com/iopage/google-homepage/blob/main/index.html" frameborder="0"></iframe>
-<button type="button"></button>
+    <input type="text" placeholder="Type an integer here" id="tableInput" />
+    <input type="submit" value="Print" onclick="tableG()" />
+    <div id="table"></div>
   </main>
   
-  
-    <footer class="copyright">
-  <a href="/copyright.html">© ioPage 2024, All rights reserved </a></footer>
-    <script src="/javascript/script.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    function tableG() {
+      let n = document.getElementById('tableInput').value;
+      let tableDiv = document.getElementById('table');
+      tableDiv.innerHTML = "";
+      for (let i = 1; i <= 10; i++) {
+        tableDiv.innerHTML += n + ' × ' + i + ' = ' + n*i +'<br>';
+      }
+    }
+  </script>
+  <footer class="copyright">
+    <a href="/copyright.html">© ioPage 2024, All rights reserved </a>
+  </footer>
+  <script src="/javascript/script.js"></script>
 </body>
 
 </html>
