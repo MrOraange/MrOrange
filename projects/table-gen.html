@@ -10,8 +10,8 @@
     gtag('config', 'G-2NNGWHC6ZC');
     </script> 
     <meta name="google-site-verification" content="VmYCz2iyjM0QPTYiBf-8I46DiEeU-4GKcU3MjSwY-_4" />
-    
-    
+
+
     <meta property="og:locale" content="en">
     <meta http-equiv="content-language" content="en">
     <meta name="theme-color" content="#EAF6FF">
@@ -21,14 +21,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/style-light.css">
-    <link rel="stylesheet" href="/css/projectscss/projectscss.css">
+    <link rel="stylesheet" href="/css/projectscss/light/projectscss.css">
     <link rel="icon" href="/images/iopage-logo.svg" type="image/svg+xml" sizes="any">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
     <title>ioPage : A site made by me to showcase how much HTML, CSS and JavaScript I have learnt till now</title>
 </head>
 
 <body>
-  <div class="navigation-bar" style="z-index: 1;">
+  <style>
+    main {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(45deg, rgba(66, 68, 90, 1), rgba(93, 189, 134, 1) , rgba(66, 150, 180, 1) );
+    }
+.ti {
+  display: flex;
+  flex-direction: row;
+    }
+.ti input {
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  border: 0.5px solid black;
+}
+.ti .tableInput {
+  width: 150px;
+}
+.ti .tableSubmit {
+  width: 60px;
+}
+.table {
+width: 230px;
+min-height: 300px;
+color: white;
+border-radius: 5px;
+display: flex;
+background: rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(5px);
+justify-content: center;
+align-items: center;
+}
+  </style>
+  <div class="navigation-bar" style="z-index: 0;">
     <div class="navigation-bar-1">
       <a href="https://iopage.github.io/">
         <img src="/images/iopage-logo.svg" alt="ioPage Logo" height="14px">
@@ -44,13 +80,13 @@
       <i class="ri-palette-fill" onclick="theme()"></i><i class="ri-menu-line" onclick="ham()"></i>
     </div>
   </div>
-  <div class="navigations">
+  <nav class="navigations">
     <a href="/about.html">About me</a>
     <a href="/projects.html">Projects</a>
     <a href="/articles.html">Articles</a>
     <a href="/contact.html">Contact</a>
-  </div>
-  
+  </nav>
+
   <main>
   <div class="ti">
     <input type="number" placeholder="Type an integer here" class="tableInput" />
@@ -58,11 +94,24 @@
   </div>
   <div class="table"></div>
   </main>
-  
+
   <footer class="copyright">
     <a href="/copyright.html">© ioPage 2024, All rights reserved </a>
   </footer>
-  <script src="/javascript/projectsjs/projectsjs.js"></script>
-  <script src="/javascript/script.js"></script>
+<script>
+  function tableG() {
+      let n = document.querySelector('.tableInput').value;
+      if (n=="") {
+        alert('Please type something before printing');
+      } else {
+        let tableDiv = document.querySelector('.table');
+      tableDiv.innerHTML = "";
+      for (let i = 1; i <= 10; i++) {
+        tableDiv.innerHTML += n + ' × ' + i + ' = ' + n*i +'<br>';
+      }
+      }
+    }
+</script>
+  <script src="/js/script.js"></script>
 </body>
 </html>

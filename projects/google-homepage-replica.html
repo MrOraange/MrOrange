@@ -1,4 +1,13 @@
-body {
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Google</title>
+</head>
+<body>
+ <style>
+   body {
   margin: 0;
 }
 *{
@@ -112,3 +121,55 @@ input:-webkit-autofill {
   justify-content: center;
   gap: 15px;
 }
+ </style>
+  <div class="navigation-bar">
+    <div class="nb1">
+     <img src="/images/img/gmenu.svg" alt="">
+      <a href="">ALL</a>  
+      <a href="">IMAGES</a>
+    </div>
+    <div class="nb2">
+      <img src="./img/ggrid.svg" alt="">
+      <button type="button">Sign In</button>
+    </div>
+  </div>
+  <main>
+    <div class="google">
+      <img src="https://www.freepnglogos.com/uploads/google-logo-png/file-google-logo-svg-wikimedia-commons-23.png" alt="Google">
+    </div>
+    <div class="sb">
+      <img src="/images/img/gsearch.jpg" alt="Google Search" onclick="urlConvert()">
+      <input type="text" id="sq" onkeydown="enter(event)">
+      <img src="/images/img/gmic.png" alt="Google Mic">
+       <img src="/images/img/glens.png" alt="Google Lens">
+    </div>
+  </main>
+  <div class="dw">
+    <span class="cy">India</span><hr><div><span class="o">
+        <span>Switch Theme</span>
+        <span>Settings</span>
+        <span>Privacy</span>
+        <span>Terms</span>
+        </span>
+      <span class="t">
+        <span>Advertising</span>
+        <span>Buisness</span>
+        <span>About</span>
+      </span></div>
+</div>
+  <script>
+    function urlConvert() {
+  let search = document.getElementById("sq").value;
+  let queryPlus = search.replace(/\+/g, '%2B');
+  let querySpace = queryPlus.replace(/ /g, '+');
+  queryFinal = 'https://google.com/search?q=' + querySpace;
+  window.location.href = queryFinal;
+}
+function enter(event) {
+  if (event.key === "Enter") {
+    urlConvert();
+  }
+}
+  </script>
+</body>
+</html>
