@@ -10,36 +10,30 @@ body {
 a {
   color: #fff;
 }
-
 .navigation-bar {
   background: #1C1D22;
   box-shadow: 0px 0px 2px #4C4E53;
 }
-
 .navigation-bar i:hover,
 .navigation-bar img:hover {
  outline: 0.5px solid #4F535C;
  background: #363940;
 }
-
 .navigations {
   background: rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 2px #4C4E53;
 }
-.navigations a:active {
+.navigations li:active {
   outline: 0.5px solid #4F535C;
   background: #363940;
 }
-
 main {
   background: #1C1D22;
   box-shadow: 0px 0px 2px #4C4E53;
 }
-
 .intro p{
   color: #DEDEDE;
 }
-
 .intro-text-buttons a:nth-child(1) button {
   background: linear-gradient(to
   right, #4D5057, #344044);
@@ -51,8 +45,11 @@ main {
   color: black;
   outline: none;
 }
-
 .top-box {
+  background: linear-gradient(to bottom, #111, #17171F);
+  box-shadow: 0px 0px 5px #3498db;
+}
+.copyright-box {
   background: linear-gradient(to bottom, #111, #17171F);
   box-shadow: 0px 0px 5px #3498db;
 }
