@@ -49,7 +49,10 @@ main {
   background: linear-gradient(to bottom, #111, #17171F);
   box-shadow: 0px 0px 5px #3498db;
 }
+.copyright-main {
+  background-image: url("https://cdn.discordapp.com/attachments/1192812117150146571/1201917442356420618/Untitled62.jpg?ex=668cb398&is=668b6218&hm=b87491a70bed09a945e434d617d8d4db716309ad85c68cb7fdedd459ce57510a&");
+}
 .copyright-box {
-  background: linear-gradient(to bottom, #111, #17171F);
+  background: linear-gradient(to bottom, rgba(17, 17, 17, 0.6), rgba(23, 23, 31, 0.8));
   box-shadow: 0px 0px 5px #3498db;
 }

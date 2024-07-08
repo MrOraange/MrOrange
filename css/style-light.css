@@ -78,11 +78,11 @@ a {
   50% {transform: scale(1.05); }
   100% {transform: scale(1); }
 }
-.navigations li {
-  list-style-type: none;
-}
 .navigations li{
-  margin: 0 5px;
+  list-style-type: none;
+  position: relative;
+  left: -16px;
+  margin: 0 0px;
   padding: 10px 15px;
   font-size: 16px;
   border-radius: 5px;
@@ -233,15 +233,19 @@ main {
 .top-box div {
   padding: 20px;
 }
-
+.copyright-main {
+  background-image: url("https://cdn.discordapp.com/attachments/1192812117150146571/1259870877705703595/Untitled622.jpg?ex=668d41b0&is=668bf030&hm=5c3d3c1aba409717a6e88929d4d4e77b0a7dce8b63ab98a4cbb466317cf58958&");
+  background-size: 650px;
+}
 .copyright-box {
   margin: 30px;
   padding: 20px;
   overflow: hidden;
-  background: linear-gradient(to bottom, #ccc, #eee);
+  background: linear-gradient(to bottom, rgba(204, 204, 204, 0.6), rgba(238, 238, 238, 0.8));
   border-radius: 15px;
   box-shadow: 0px 0px 5px #2980b9;
   margin-top: 30px;
   margin-bottom: 30px;
   font-weight: 300;
+  font-size: 14px
 }
