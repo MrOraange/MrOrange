@@ -30,6 +30,7 @@ a {
   background: #fff;
   border-radius: 15px;
   box-shadow: 0px 0px 2px lightslategrey;
+  z-index: 1;
 }
 .navigation-bar i,
 .navigation-bar img{
@@ -72,6 +73,7 @@ a {
   backdrop-filter: blur(2.5px);
   border-radius: 15px;
   box-shadow: 0px 0px 2px lightslategrey;
+  z-index: 1;
 }
 @keyframes popup {
   0% {transform: scale(0.9); }
@@ -188,6 +190,10 @@ main {
     width: 40%;
     padding: 30px;
   }
+  .project-box {
+    border-radius: 20px!important;
+    width: 50%;
+  }
 }
 
 .contents-view-title {
@@ -248,4 +254,32 @@ main {
   margin-bottom: 30px;
   font-weight: 300;
   font-size: 14px
+}
+.left-line {
+  width: 10px;
+  background: linear-gradient(to bottom, rgba(21, 205, 255, 1), rgba(4, 185, 68, 1), rgba(189, 255, 34, 1));
+}
+.pmain {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin: 10px;
+  padding: 20px;
+}
+.project-box {
+  font-size: 15px;
+  box-shadow: 0px 0px 5px rgba(20, 255, 0, 1);
+  border-radius: 10px;
+  padding: 15px;
+  transition: all ease 1s;
+}
+.project-box:hover {
+  box-shadow: 0px 0px 5px rgba(1, 176, 237, 1);
+  transform: scale(1.01);
+}
+.project-box:active {
+  box-shadow: 0px 0px 5px rgba(237, 1, 1, 1);
+}
+.project-box a:hover .project-box {
+  background: linear-gradient(45deg, rgba(237, 237, 237, 1), rgba(255, 255, 255, 1));
 }

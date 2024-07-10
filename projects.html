@@ -47,11 +47,21 @@
   <li><a href="/contact.html">Contact</a></li>
 </ul>
 </nav>
-<main>
-  <img src="https://cdni.iconscout.com/illustration/premium/thumb/website-is-under-construction-5115240-4271606.png" alt="Site under Constriction" style="width: 100%;"><br>
-  <p style="margin: 25px;">Soon<br>
-  </p>
-<button style="margin: 25px; color: black;" onclick="history.back()">Go Back</button>
+<main style="display: flex; flex-direction: row; padding-left: 0; overflow: hidden">
+<div class="left-line"></div>
+<div class="pmain">
+  <h2>Projects</h2>
+  <div class="project-box">
+   <h4>Table Generator</h4>
+   <p>This is made from javascript, when you type your input as an integer and click print, the table of that number get printed. However with decimal numbers it can cause mistakes in printing due to floating point errors.</p>
+   <p><strong>How it works:</strong> When you type any integer in the input, it gets stored in a variable.<br>
+   When you click "print" a javascript function works which add text in pre existing div in the form of n × i = ni<br>This step is repeated for values of i from 1 to 10 with the help of 'for loop'.<br><br>Loop function in javascript works same as sigma function in maths.</p><a style="display: flex; justify-content: flex-end;" href="/projects/table-gen.html">(view)</a>
+  </div>
+  <div class="project-box">
+    <h4>Google</h4>
+    <p>...</p>
+  </div>
+</div>
 </main>
 <footer class="copyright"><a href="/copyright.html">© ioPage 2024, All rights reserved</a></footer>
 <script src="/js/script.js"></script>
