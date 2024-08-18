@@ -60,6 +60,40 @@ background: rgba(255, 255, 255, 0.1);
 backdrop-filter: blur(5px);
 justify-content: center;
 align-items: center;
+
+opacity: 0;
+clip-path: inset(100% 0 0 0); 
+}
+@keyframes tableAni{
+  0% {opacity: 0; clip-path: inset(100% 0 0 0);}
+  100% {opacity: 1; clip-path: inset(0 0 0 0);}
+}
+.pop, .clear {
+  visibility: hidden;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  border: 0.5px solid black;
+  color: black;
+}
+@media print {
+body* {
+visibility: hidden;
+}
+.table, .table * {
+visibility: visible;
+}
+.table {
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+}
+}
+@keyframes popup {
+  0% {transform: scale(0.9); }
+  50% {transform: scale(1.05); }
+  100% {transform: scale(1); }
 }
 .navigations {
   z-index: 2;
@@ -94,8 +128,12 @@ align-items: center;
     <input type="submit" value="Print" onclick="tableG()" class="tableSubmit" />
 </div>
 <div class="table"></div>
+<div>
+  <button class="pop" onclick="window.print()">&#128424; Print on Paper</button>
+</div>
 </main>
 <footer class="copyright"><a href="/copyright.html">© ioPage 2024, All rights reserved</a></footer>
+
 <script>
 function tableG() {
   let n = document.querySelector('.tableInput').value;
@@ -104,6 +142,10 @@ function tableG() {
     let tableDiv = document.querySelector('.table');
     tableDiv.innerHTML = '';
     for (let i = 1; i <= 10; i++) {tableDiv.innerHTML += n + ' × ' + i + ' = ' + n*i +'<br>';}
+    tableDiv.style.animation = 'tableAni 1s forwards'
+    let pop = document.querySelector('.pop');
+    pop.style.visibility = 'visible';
+    pop.style.animation = 'popup 0.4s ease';
   }
 }
 </script>
