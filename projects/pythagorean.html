@@ -19,11 +19,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/style-light.css">
+    <link href="https://fonts.cdnfonts.com/css/calculator" rel="stylesheet">
     <link rel="icon" href="/images/iopage-logo.svg" type="image/svg+xml" sizes="any">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
     <title>ioPage : A site made by me to showcase how much HTML, CSS and JavaScript I have learnt till now</title>
 </head>
 <body>
+<style>
+main {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+    }
+.output {
+  padding: 10px 20px;
+  margin: 5px 15px;
+  background: #1c1d22;
+  width: 280px;
+  color: white;
+  font-size: 25px;
+  font-weight: 1000;
+  font-family: 'Calculator', sans-serif;
+}
+.generate {
+  color: white;
+  width: fit-content;
+  background: #1c1d22;
+  margin: 5px 15px;
+  padding: 5px 10px;
+  font-size: 30px;
+  border: none;
+  font-weight: ;
+  font-family: 'Calculator', sans-serif;
+}
+</style>
 <div class="navigation-bar">
 <div class="navigation-bar-l">
   <a href="https://iopage.github.io/"><img src="/images/iopage-logo.svg" alt="ioPage Logo" height="14px"></a>
@@ -47,23 +77,27 @@
   <li><a href="/contact.html">Contact</a></li>
 </ul>
 </nav>
-<main style="display: flex; flex-direction: row; padding-left: 0; overflow: hidden">
-<div class="left-line"></div>
-<div class="pmain">
-  <h2>Projects</h2>
-  <div class="project-box">
-   <h4>Multiplication Table Generator</h4>
-   <p>This is made from javascript, when you type your input as an integer and click print, the table of that number get printed. However with decimal numbers it can cause mistakes in printing due to floating point errors.</p>
-   <p><strong>How it works:</strong> When you type any integer in the input, it gets stored in a variable.<br>
-   When you click "print" a javascript function works which add text in pre existing div in the form of n × i = ni<br>This step is repeated for values of i from 1 to 10 with the help of 'for loop'.<br><br>Loop function in javascript works like sigma function in maths. The only difference is that sigma (∑) do summation and 'for loop' do whatever we want (like printing).</p><a style="" href="/projects/table-gen.html">(view)</a>
-  </div>
-  <div class="project-box">
-    <h4>Pythagorean triples</h4>
-    <p>...</p><a style="" href="/projects/pythagorean.html">(view)</a>
-  </div>
-</div>
+
+<main>
+<p class="output">3  , 4  , 5</p>
+<button onclick="pG()" class="generate" type="submit">Generate</button>
+<p class="note">This is just the starting of the Project.<br>New features are coming soon.</p>
 </main>
+
 <footer class="copyright"><a href="/copyright.html">© ioPage 2024, All rights reserved</a></footer>
+
+<script>
+function pG() {
+  let a = Math.floor(Math.random()*13);
+  let b = Math.floor(Math.random()*10+1);
+  let m = 2*a*b;
+  let n = Math.abs(a**2-b**2);
+  let x = (m<n) ? m : n;
+  let y = (m<n) ? n : m;
+  let z = a**2+b**2;
+  document.querySelector('.output').innerHTML = x+'  , '+y+'  , '+z;
+}
+</script>
 <script src="/js/script.js"></script>
 </body>
 </html>
