@@ -36,7 +36,7 @@ main {
 }
 .intro-text-buttons a:nth-child(1) button {
   background: linear-gradient(to
-  right, #4D5057, #344044);
+  right, #344044, #4D5057);
   color: white;
   outline: none;
 }
